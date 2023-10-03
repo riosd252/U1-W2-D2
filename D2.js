@@ -126,6 +126,8 @@ console.log("Esercizio 5");
       : "Shipping cost: " + shippingCost + "€";
       console.log(isShippingFree); */
 
+console.log("Esercizio 6");
+
 {
   const totalShoppingCart = 70;
 
