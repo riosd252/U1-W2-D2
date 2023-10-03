@@ -7,13 +7,15 @@
 console.log("Esercizio 1");
 
 {
-  const num = 45;
-  const num1 = 80;
+  const num = 50;
+  const num1 = 60;
 
   if (num > num1) {
     console.log(num + " è maggiore di " + num1);
-  } else {
+  } else if (num1 > num) {
     console.log(num1 + " è maggiore di " + num);
+  } else {
+    console.log("I due valori sono uguali.");
   }
 }
 
