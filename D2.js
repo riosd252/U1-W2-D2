@@ -120,6 +120,32 @@ console.log("Esercizio 5");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+/*const isShippingFree =
+    totalDiscount > 50
+      ? "You unlocked free shipping!"
+      : "Shipping cost: " + shippingCost + "€";
+      console.log(isShippingFree); */
+
+{
+  const totalShoppingCart = 70;
+
+  const shippingCost = 10;
+
+  const totalDiscount = totalShoppingCart * 0.8;
+
+  if (totalDiscount >= 50) {
+    console.log(
+      "Totale da pagare:" + totalDiscount + "€, spedizione gratuita."
+    );
+  } else {
+    console.log(
+      "Totale da pagare: " +
+        (totalDiscount + shippingCost) +
+        "€ di cui spedizione 10€"
+    );
+  }
+}
+
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
