@@ -30,7 +30,7 @@ console.log("Esercizio 2");
 {
   const num = 5;
 
-  let num1 = 6;
+  let num1 = 5;
 
   if (num1 !== num) {
     console.log("not equal");
@@ -48,16 +48,12 @@ console.log("Esercizio 2");
 console.log("Esercizio 3");
 
 {
-  const num = 5;
+  let num = 38;
 
-  const num1 = 25;
-
-  const num2 = num1 % num;
-
-  if (num2 === 0) {
-    console.log(num1 + " è divisibile per 5");
+  if (num % 5 === 0) {
+    console.log(num + " è divisibile per 5");
   } else {
-    console.log(num1 + " non è divisibile per 5");
+    console.log(num + " non è divisibile per 5");
   }
 }
 
@@ -120,12 +116,6 @@ console.log("Esercizio 5");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/*const isShippingFree =
-    totalDiscount > 50
-      ? "You unlocked free shipping!"
-      : "Shipping cost: " + shippingCost + "€";
-      console.log(isShippingFree); */
-
 console.log("Esercizio 6");
 
 {
@@ -155,6 +145,34 @@ console.log("Esercizio 6");
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+console.log("Esercizio 7");
+
+let z1 = 6;
+let z2 = 14;
+let z3 = 10;
+
+if (z1 >= z2) {
+  if (z3 >= z1) {
+    console.log(z3, z1, z2);
+  } else {
+    if (z3 >= z2) {
+      console.log(z1, z3, z2);
+    } else {
+      console.log(z1, z2, z3);
+    }
+  }
+} else {
+  if (z3 >= z2) {
+    console.log(z3, z2, z1);
+  } else {
+    if (z3 >= z1) {
+      console.log(z2, z3, z1);
+    } else {
+      console.log(z2, z1, z3);
+    }
+  }
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -210,9 +228,24 @@ console.log("Esecizio 9");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log("Esercizio 10");
+
+let val = 7;
+if (val < 5) {
+  console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
+
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
+
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+console.log("Esercizio 11");
 
 const me = {
   name: "John",
@@ -220,13 +253,16 @@ const me = {
   skills: ["javascript", "html", "css"],
 };
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+console.log("Esercizio 12");
+
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
@@ -234,14 +270,40 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log("Esercizio 13");
+
+me.skills.pop();
+
+console.log(me);
+
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log("Esercizio 14");
+
+let myArray = [];
+myArray.push(1);
+myArray.push(2);
+myArray.push(3);
+myArray.push(4);
+myArray.push(5);
+myArray.push(6);
+myArray.push(7);
+myArray.push(8);
+myArray.push(9);
+myArray.push(10);
+console.log(myArray);
+
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+console.log("Esercizio 15");
+
+myArray[9] = 100;
+console.log(myArray[9]);
